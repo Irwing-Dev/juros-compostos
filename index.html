@@ -9,14 +9,16 @@
 </head>
 <body>
     <header>
-        <button><a href="../juros simples/index.html">Juros Simples</a></button>
+        <nav>
+            <a href="../juros simples/index.html" id="button-smp">Juros Simples</a>
+        </nav>
     </header> <br><br>
     <main>
         <section>
-            <input type="number" id="capital" placeholder="Digite aqui seu capital"> <br><br>
-            <input type="number" id="taxa" placeholder="Digite aqui a taxa"> <br><br>
-            <input type="number" id="tempo" placeholder="Digite aqui o tempo"> <br><br>
-            <input type="submit" value="Enviar" onclick="calcular()"> <br><br>
+            <input type="number" id="capital" placeholder="Digite aqui seu capital" min="0"> <br><br>
+            <input type="number" id="taxa" placeholder="Digite aqui a taxa" min="0"> <br><br>
+            <input type="number" id="tempo" placeholder="Digite aqui o tempo" min="0"> <br><br>
+            <input type="submit" value="Enviar" onclick="calcular()" id="btn-submit"> <br><br>
             <div id="res"></div>
         </section>
     </main>
@@ -35,7 +37,7 @@
             let operacaoFinalForm = operacaoFinal.toFixed(2).toString().replace('.', ',');
             let JurosForm = Juros.toFixed(2).toString().replace('.', ',');
             
-            res.innerHTML = `Seu valor final foi de: R$${operacaoFinalForm} com os juros de R$${JurosForm}`
+            res.innerHTML = `<p>Seu valor final foi de: R$${operacaoFinalForm}</p> <p>Os juros foram de R$${JurosForm}</p>`
         }
     </script>
 </body>

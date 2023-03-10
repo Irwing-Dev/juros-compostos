@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid black;
+    height: 5em;
+    width: 100%;
+}
+
+nav {
+    margin: 0.8em;
+    display: flex;
+    align-items: baseline;
+}
+
+#button-smp {
+    background-color: white;
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 0.6em;
+    transition: .8s;
+}
+
+#button-smp:hover {
+    background-color: black;
+    color: white;
+    transition: .8s;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    margin-top: 8em;
+    border: 1px solid black;
+    border-radius: 0.6em;
+    padding: 2em;
+    width: 320px;
+    text-align: center;
+}
+
+#capital {
+    padding: 1em;
+    border-radius: 0.6em;
+    outline: 1px solid black;
+    border: none;
+}
+
+#capital::placeholder {
+    font-weight: bold;
+}
+
+#taxa {
+    padding: 1em;
+    border-radius: 0.6em;
+    outline: 1px solid black;
+    border: none;
+}
+
+#taxa::placeholder {
+    font-weight: bold;
+}
+
+#tempo {
+    padding: 1em;
+    border-radius: 0.6em;
+    outline: 1px solid black;
+    border: none;
+}
+
+#tempo::placeholder {
+    font-weight: bold;
+}
+
+#btn-submit {
+    margin-left: 7em;
+    padding: 1em 2em;
+    background-color: rgb(4, 71, 158);
+    border: none;
+    border-radius: 0.5em;
+    color: white;
+    cursor: pointer;
+}
+
+#res {
+    width: 100%;
+}
+
+#res > p {
+    text-align: left;
+} 

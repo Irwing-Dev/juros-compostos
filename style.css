@@ -85,6 +85,34 @@ main {
     border: 1px solid rgb(124, 177, 255);
 }
 
+.input-secondCap {
+    display: flex;
+}
+
+.input-secondCap span {
+    background-color: rgb(226, 226, 226);
+    padding: 1em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    font-size: 13px;
+}
+
+.secondCap {
+    background-color: white;
+    outline: none;
+    border: 1px solid rgb(226, 226, 226);
+    border-top-left-radius: 0em;
+    border-bottom-left-radius: 0em;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    width: 100%;
+    padding: 1em;
+}
+
+.secondCap:focus {
+    border: 1px solid rgb(124, 177, 255);
+}
+
 .input-fee {
     display: flex;
 }
